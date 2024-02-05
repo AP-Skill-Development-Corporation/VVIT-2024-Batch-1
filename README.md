@@ -1,7 +1,7 @@
 # VVIT-2024-Batch-1
 Web Development Using Django for 3rd Year [CSE,IT and AIDS]
 
-## Day-01[05-02-2023]:
+## Day-01[05-02-2024]:
   - Python Downloads,Installation and Configuration
   - Python, pip version check and Pip upgrade
   - Django installation and version check
