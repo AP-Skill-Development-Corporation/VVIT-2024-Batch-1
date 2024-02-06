@@ -27,6 +27,7 @@ def ry(self):
 
 def mg(self,m):
 	return HttpResponse(f"<script>alert('hi {m}')</script>")
+
 def student(self,sname,branch,year,rollNo):
 	return HttpResponse(f"<script>alert('hi {sname}')</script>"+
 		f'<table border="1"><tr><td>Name</td><td>{sname}</td><tr><td>Branch</td><td>{branch}</td></tr><tr><td>Year</td><td>{year}</td></tr><tr><td>RollNo</td><td>{rollNo}</td></tr></table>'
@@ -34,8 +35,10 @@ def student(self,sname,branch,year,rollNo):
 
 def np(request):
 	return render(request,'sample.html')
+
 def fun(request,a):
 	return render(request,'example.html',{'z':a})
+
 def display(request,a,s,c,d):
 	return render(request,'sample2.html',{'a':a,'b':s,'c':c,'d':d})
 
