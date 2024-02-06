@@ -1,0 +1,29 @@
+Day-02[06-02-2024]:
+===================
+	Good Morning All...
+
+	Concepts:
+	---------
+		- HttpResponse with html tag,css styling,js
+		- Dynamic url mapping with n parameters
+		- Interface between controller and template
+		- Data rendering from controller to template with inline,internal css and javascript
+
+	Task:
+	-----
+		Python Concepts:
+		================
+			- OOPS Concepts class,object,method,contructor and its types, inheritance and its types
+			- OOPS concept by using bank application
+
+		Django:
+		=======
+			- Difference between MVC and MVT
+
+		HTML:
+		=====
+			- Form controls
+
+		Bootstrap-4:
+		============
+			- alerts,container,container-fluid,jumbotron,grid system
