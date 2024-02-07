@@ -1,0 +1,27 @@
+h2 
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    border: solid green 1px;
+    border-radius: 12px 45px 45px 12px;
+    padding: 12px;
+    text-align:center;
+}
+
+form
+{
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 17px;
+	border: solid magenta 1px;
+	border-radius: 10px;
+}
+
+#s1
+{
+	float:right;
+}
+label
+{
+	margin-left: 20%;
+}

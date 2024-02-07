@@ -1,0 +1,80 @@
+Day-03[07-02-2024]:
+===================
+	Good Morning All..
+
+	Concepts:
+	=========
+		- static file handling
+		- Data rendering from template to controller and controller to another template
+		- Template blocks
+		- Bootstrap-4 [margins,padding,container,jumbotron,color,device scalings,grid system]
+
+	Margins:
+	========
+		m => margin for all directions
+
+		ml => margin-left
+		mr => margin-right
+		mt => margin-top
+		mb => margin-bottom
+		mx => margin[left and right]
+		my => margin[top and bottom]
+
+	Padding:
+	========
+		p => Padding for all directions
+
+		pl => Padding-left
+		pr => Padding-right
+		pt => Padding-top
+		pb => Padding-bottom
+		px => Padding[left and right]
+		py => Padding[top and bottom]
+	
+	Points:
+	=======
+		0 - 5
+
+	Container:
+	==========
+		container => margin-left and right  
+		container-fluid => margins will not be occupied
+
+	Jumbotron:
+	==========
+		Content inside of class will be placed in middle of the page and the background will be in grey color
+
+	Color:
+	======
+		primary => dark blue
+		secondary => grey
+		warning => yellow
+		info => light blue
+		danger => red
+		dark => black
+		light/white => white
+		success => green
+
+	Scaling devices:
+	================
+		very small => xm
+		small => sm
+		medium => md
+		large => lg
+		extra large => xl
+
+	
+	Task:
+	=====
+		Python:
+		-------
+			- bank application by using oops concept
+			- OOPS concepts
+
+		Bootstrap-4:
+		------------
+			- cards, form controls
+
+		SQL:
+		----
+			- SQL commands Overview
