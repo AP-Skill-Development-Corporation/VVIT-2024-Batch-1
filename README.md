@@ -13,3 +13,8 @@ Web Development Using Django for 3rd Year [CSE,IT and AIDS]
   - Http Response with html tag,css style and javascript
   - Template folder creation, Interface between controller and template
   - Template file with single and n parameters, css styling and javascript access with sample example on each
+
+## Day-03[07-02-2023]:
+  - Static File handling with sample example on each
+  - Data rendering from template to controller and then controller to another template
+  - Template blocks,DTL language for variable,conditional statements,Loops and static file access with sample example on each
