@@ -22,3 +22,4 @@ Web Development Using Django for 3rd Year [CSE,IT and AIDS]
 ## Day-04[08-02-2024]:
   - Model Creation,makemigrations,migrate and ORM,Model Queries in django shell
   - CRUD Operations on shell and basic procedure using html with sample example on each
+  - bootstrap-4 cards,grid system,buttons etc.,
