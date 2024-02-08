@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+	<div class="row">
+		<div class="card col-md-4 shadow-lg border border-warning h-100 mx-2">
+			<div class="card-body">
+				<h3>Add Employee</h3>
+				<form>
+					<div class="row">
+						<div class="col">
+							<input type="reset" value="clear" class="form-control btn btn-outline-danger">
+						</div>
+						<div class="col">
+							<input type="submit" value="Create" class="form-control btn btn-outline-success">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col shadow-lg border border-info">
+			<div class="card-body">
+				<h3>Employee data</h3>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

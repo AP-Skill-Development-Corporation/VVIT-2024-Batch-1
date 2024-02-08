@@ -1,0 +1,136 @@
+Day-04[08-02-2024]:
+===================
+	Good Morning All...
+
+	Concepts:
+	=========
+		- Model Creation, makemigrations,migrate and ORM
+		- Model Queries in shell
+		- CRUD Operations with sample example
+
+	Shell:
+	======
+		- cmd where manage.py exists
+		- py manage.py shell
+		- import the class name to a shell
+		- from packagename.modulename import classname
+			Ex:
+				from BSApp.models import Student
+
+	CRUD Operations:
+	================
+		C => Create
+		R => Read/Retrieve
+		U => Update
+		D => Delete
+
+	Create:
+	=======
+		- save
+		- create
+
+		save:
+		=====
+			=> objectname = classname(fieldname="value")
+			=> objectname.save()
+		create:
+		=======
+			=> objectname = classname.objects.create(fieldname="value")
+			=> Here no need to save the ata because the create method automatically stores the data in database
+
+		Note: => So to insert n number of records at an single object then we can use bulk_create
+
+	Read/Retrieve:
+	==============
+		- get
+		- filter
+		- all
+		- first
+		- last
+
+		get:
+		====
+			= It should be used only for Unique values
+			= If the value is not existing or accessing n number of records it displays an error
+			=> Ex: objectname = classname.objects.get(fieldname="value")
+
+		filter:
+		=======
+			= It access duplicate value records 
+			= If the record is not existing in the database it stores empy query set list
+			=> Ex: objectname = classname.objects.filter(fieldname="value")
+			=> To display all record values we need to use the iteration.
+			=> for iterationvariablename in objectname:
+				print(iterationvariablename.fieldname)
+
+		all:
+		====
+			= It access all the records from the database
+			=> Ex: objectname = classname.objects.all()
+			= To display all the records we need to use iteration
+			=> for iterationvariablename in objectname:
+				print(iterationvariablename.fieldname)
+
+		first:
+		======
+			= It access the first record value in the table
+			= Ex: objectname = classname.objects.first()
+
+		last:
+		=====
+			= It access the last record value in the table
+			= Ex: objectname = classname.objects.last()
+
+	Update:
+	=======
+		- get :: save
+		- filter, all :: update
+
+		get:
+		====
+			= We need to access a unique record value first we need to access the record and need to fix the updated value
+			= Ex: objectname = classname.objects.get(fieldname="value")
+			= objectname.fieldname = newvalue
+			= objectname.save()
+
+		filter:
+		=======
+			= We need to update the duplicate record value fields then we need to prefer the update method and here no need to use the save method
+			= Ex: objectname = classname.objects.filter(fieldname="value")
+			= objectname.update(fieldname="newvalue")
+
+			Note: Similarly for all records we need to update entire column value then we prefer all and update method
+
+	Delete:
+	=======
+		- get
+		- filter
+		- all
+
+		get:
+		====
+			= We need to delete the unique record value then we need to use get
+			= Ex: objectname = classname.objects.get(fieldname="value")
+			= objectname.delete()
+								or
+			= objectname = classname.objects.get(fieldname="value").delete()
+
+		filter:
+		=======
+			= We need to delete the duplicate record of some field value
+			= Ex: objectname = classname.objects.filter(fieldname="value")
+			= objectname.delete()
+								or
+			= objectname = classname.objects.filter(fieldname="value").delete()
+
+		all:
+		====
+			= We need to delete all record values
+			= Ex: objectname = classname.objects.all(fieldname="value")
+			= objectname.delete()
+								or
+			= objectname = classname.objects.all(fieldname="value").delete()
+
+	Task:
+	=====
+		- Previous Days concepts
