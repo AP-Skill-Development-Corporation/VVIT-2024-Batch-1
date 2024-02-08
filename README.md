@@ -18,3 +18,7 @@ Web Development Using Django for 3rd Year [CSE,IT and AIDS]
   - Static File handling with sample example on each
   - Data rendering from template to controller and then controller to another template
   - Template blocks,DTL language for variable,conditional statements,Loops and static file access with sample example on each
+
+## Day-04[08-02-2024]:
+  - Model Creation,makemigrations,migrate and ORM,Model Queries in django shell
+  - CRUD Operations on shell and basic procedure using html with sample example on each
