@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Data</title>
+	<script type="text/javascript" src="{% static 'js/sample.js' y %}">
+		// alert('Hi welcome {{y}}');
+	</script>
+</head>
+<body>
+	<h3>Student Data</h3>
+	<h4>Roll Number: {{x}}</h4>
+	<h4>Name: {{y}}</h4>
+	<h4>Year: {{z}}</h4>
+	<h4>Branch: {% if p == "1" %}
+					CSE
+				{% elif p == "2" %}
+					ECE
+				{% elif p == "3" %}
+					IT
+				{% elif p == "4" %}
+					EEE
+				{% elif p == "5" %}
+					Others
+				{% else %}
+					Select branch
+				{% endif %}</h4>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-5 mx-auto shadow-lg border border-warning">
+		<div class="card-body">
+			<h3>Update Employee</h3>
+			<form method="post">
+				{% csrf_token %}
+				{% for h in b %}
+					{{h}}
+				{% endfor %}
+				<div class="row">
+					<div class="col">
+						<a href="{% url 'em' %}" class="form-control btn btn-outline-primary">Back</a>
+					</div>
+					<div class="col">
+						<input type="submit" value="Update" class="form-control btn btn-outline-success">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

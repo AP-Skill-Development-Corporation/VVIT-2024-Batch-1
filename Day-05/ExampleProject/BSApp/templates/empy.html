@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+	{% if messages %}
+		{% for h in messages %}
+			<div class="alert alert-{{h.tags}} alert-dismissible">
+  				<button type="button" class="close" data-dismiss="alert">&times;</button>
+  				{{h}}
+			</div>
+		{% endfor %}
+	{% endif %}
+	<div class="row">
+		<div class="card col-md-4 shadow-lg border border-warning h-100 mx-2">
+			<div class="card-body">
+				<h3>Add Employee</h3>
+				<form method="post">
+					{% csrf_token %}
+					{% for j in d %}
+						{{j}}
+					{% endfor %}
+					<div class="row">
+						<div class="col">
+							<input type="reset" value="clear" class="form-control btn btn-outline-danger">
+						</div>
+						<div class="col">
+							<input type="submit" value="Create" class="form-control btn btn-outline-success">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col shadow-lg border border-info h-100">
+			<div class="card-body">
+				<h3>Employee data</h3>
+				<table class="table table-hover table-striped">
+					<tr class="bg-dark text-light">
+						<th>Sno</th>
+						<th>Employee Id</th>
+						<th>Employee Name</th>
+						<th>Actions</th>
+					</tr>
+					{% for k in ud %}
+					<tr>
+						<td>{{forloop.counter}}</td>
+						<td>{{k.eid}}</td>
+						<td>{{k.ename}}</td>
+						<td colspan="2"><a href="{% url 'empd' k.id %}" class="btn btn-outline-info form-control col-sm-4 mr-1">Edit</a><a href="{% url 'emd' k.id %}" class="btn btn-outline-danger form-control col-sm-4 ml-1">Delete</a></td>
+					</tr>
+					{% endfor%} 
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-5 mx-auto shadow-lg border border-success">
+		<div class="card-body">
+			<h3>Delete Employee</h3>
+			<form method="post">
+				{% csrf_token %}
+				<h4>Are you sure want to delete?</h4>
+				<h5>Id: {{e.eid}}</h5>
+				<h5>Name: {{e.ename}}</h5>
+				<div class="row">
+					<div class="col">
+						 <a href="{% url 'em' %}" class="form-control btn btn-outline-warning">No</a>
+					</div>
+					<div class="col">
+						<input type="submit" value="Yes confirm" class="form-control btn btn-outline-primary">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}
