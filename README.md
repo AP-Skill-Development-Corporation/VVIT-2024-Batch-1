@@ -14,7 +14,7 @@ Web Development Using Django for 3rd Year [CSE,IT and AIDS]
   - Template folder creation, Interface between controller and template
   - Template file with single and n parameters, css styling and javascript access with sample example on each
 
-## Day-03[07-02-2023]:
+## Day-03[07-02-2024]:
   - Static File handling with sample example on each
   - Data rendering from template to controller and then controller to another template
   - Template blocks,DTL language for variable,conditional statements,Loops and static file access with sample example on each
@@ -23,3 +23,8 @@ Web Development Using Django for 3rd Year [CSE,IT and AIDS]
   - Model Creation,makemigrations,migrate and ORM,Model Queries in django shell
   - CRUD Operations on shell and basic procedure using html with sample example on each
   - bootstrap-4 cards,grid system,buttons etc.,
+
+## Day-05[09-02-2024]:
+  - CRUD operations by using forms concepts and Form validation
+  - Widgets,Useage of Admin app, Superuser Creation and Roles of users
+  - User Registration and Messages concept with sample example on it
